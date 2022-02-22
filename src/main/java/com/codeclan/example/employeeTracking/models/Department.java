@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
+
 @Entity
 @Table(name = "departments")
 public class Department {
@@ -21,7 +22,7 @@ public class Department {
 
     public Department(String name) {
         this.name = name;
-        this.employees = new ArrayList<Employee>();
+        this.employees = new ArrayList<>();
     }
 
     public Department(){}
